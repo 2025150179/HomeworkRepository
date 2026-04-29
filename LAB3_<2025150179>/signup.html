@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <title>Signup page</title>
+    </head>
+    <body class="body-container">
+        <h1>Welcome to INTERNET-PROGRAMMING MOVIE SITE</h1>
+        <nav class="nav-container">
+            <a href="index.html">메인페이지</a> | <a href="login.html">로그인</a> | <a href="signup.html">회원가입</a>
+        </nav>
+        <form class="container" method="POST" autocomplete="on" action="login.html">
+            <p>
+                <label>이름: <input name="이름" type="text" autofocus required/></label>
+            </p>
+            <p>
+                <label>생일: <input name="생일" type="date" placeholder="연도-월-일" required/></label>
+            </p>
+            <p>
+                <label>성별: </label>
+                <label><input name="성별" type="radio" value="남성" checked>남성</label>
+                <label><input name="성별" type="radio" value="여성">여성</label>
+            </p>
+            <p>
+                <label>학년: <input name="grade" type="number" min="1" max="6" step="1" value="2"/></label>
+            </p>
+            <p>
+                <label>아이디: <input name="아이디" type="text" maxlength="20" required/></label>
+            </p>
+            <p>
+                <label>비밀번호: <input name="비밀번호" type="password" required/></label>
+            </p>
+            <p>
+                <label>이메일: <input name="email" type="email" placeholder="name@domain.com"/></label>
+            </p>
+            <p>
+                <label>문어의 발의 개수는? 
+                    <select name="question">
+                        <option selected>None</option>
+                        <option>10</option>
+                        <option>8</option>
+                        <option>6</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <button type="submit" class="btn-signup">Signup</button>
+                <button type="reset" class="btn-cancel">Cancel</button>
+            </p>
+        </form>
+    </body>
+</html>
